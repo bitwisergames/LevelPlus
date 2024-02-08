@@ -5,6 +5,7 @@ using Terraria.Audio;
 using Terraria.GameContent.UI.Elements;
 using Terraria.ID;
 using Terraria.UI;
+using Terraria.Localization;
 
 namespace LevelPlus.UI {
     class XPBar : UIElement {
@@ -158,7 +159,8 @@ namespace LevelPlus.UI {
 
                 averageLevel /= numPlayers;
 
-                Main.instance.MouseText("Level: " + (modPlayer.level + 1) + "\n" + modPlayer.statPoints + " unspent points\n" + ((Main.netMode == NetmodeID.MultiplayerClient) ? numPlayers + " players online\nAverage Level: " + ((int) averageLevel) : ""));
+                Main.instance.MouseText(Language.GetTextValue("Mods.LevelPlus.UI.XPBar.Local", (modPlayer.level + 1), modPlayer.statPoints) + "\n" + ((Main.netMode == NetmodeID.MultiplayerClient) ? Language.GetTextValue("Mods.LevelPlus.UI.XPBar.Multiplayer", numPlayers, ((int) averageLevel)) : ""));
+                //Main.instance.MouseText("Level: " + (modPlayer.level + 1) + "\n" + modPlayer.statPoints + " unspent points\n" + ((Main.netMode == NetmodeID.MultiplayerClient) ? numPlayers + " players online\nAverage Level: " + ((int) averageLevel) : ""));
             }
         }
 

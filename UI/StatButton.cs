@@ -4,6 +4,7 @@ using Terraria.Audio;
 using Terraria.GameContent.UI.Elements;
 using Terraria.ID;
 using Terraria.UI;
+using Terraria.Localization;
 
 namespace LevelPlus.UI {
     internal enum Stat {
@@ -107,77 +108,79 @@ namespace LevelPlus.UI {
             switch (type) {
                 case Stat.CONSTITUTION:
                     points.SetText("" + modPlayer.constitution);
-                    text = "Constitution:\n\n"
-                        + "  +" + (modPlayer.constitution * LevelPlusConfig.Instance.HealthPerPoint) + " life (+" + (modPlayer.level * LevelPlusConfig.Instance.HealthPerLevel) + " from level)\n"
-                        + "  +" + (modPlayer.constitution / LevelPlusConfig.Instance.DefensePerPoint) + " defense\n"
-                        + "  +" + (modPlayer.constitution / LevelPlusConfig.Instance.HRegenPerPoint) + " life regen";
+                    text = Language.GetTextValue("Mods.LevelPlus.UI.StatButton.Constitution",
+                        modPlayer.constitution * LevelPlusConfig.Instance.HealthPerPoint,
+                        modPlayer.level * LevelPlusConfig.Instance.HealthPerLevel,
+                        modPlayer.constitution / LevelPlusConfig.Instance.DefensePerPoint,
+                        modPlayer.constitution / LevelPlusConfig.Instance.HRegenPerPoint);
                     rarity = 7; //lime
                     break;
                 case Stat.STRENGTH:
                     points.SetText("" + modPlayer.strength);
-                    text = "Strength:\n\n"
-                        + "  +" + ((int) (modPlayer.strength * (LevelPlusConfig.Instance.MeleeDamagePerPoint * 100))) + "% melee damage\n"
-                        + "  +" + (modPlayer.strength / LevelPlusConfig.Instance.MeleeCritPerPoint) + "% melee crit chance";
+                    text = Language.GetTextValue("Mods.LevelPlus.UI.StatButton.Strength",
+                        (int) (modPlayer.strength * (LevelPlusConfig.Instance.MeleeDamagePerPoint * 100)),
+                        modPlayer.strength / LevelPlusConfig.Instance.MeleeCritPerPoint);
                     rarity = 10; //red
                     break;
                 case Stat.INTELLIGENCE:
                     points.SetText("" + modPlayer.intelligence);
-                    text = "Intelligence:\n\n"
-                        + "  +" + ((int) (modPlayer.intelligence * (LevelPlusConfig.Instance.MagicDamagePerPoint * 100))) + "% magic damage\n"
-                        + "  +" + (modPlayer.intelligence / LevelPlusConfig.Instance.MagicCritPerPoint) + "% magic crit chance";
+                    text = Language.GetTextValue("Mods.LevelPlus.UI.StatButton.Intelligence",
+                        (int) (modPlayer.intelligence * (LevelPlusConfig.Instance.MagicDamagePerPoint * 100)),
+                        modPlayer.intelligence / LevelPlusConfig.Instance.MagicCritPerPoint);
                     rarity = 9; //cyan
                     break;
                 case Stat.CHARISMA:
                     points.SetText("" + modPlayer.charisma);
-                    text = "Charisma:\n\n"
-                        + "  +" + ((int) (modPlayer.charisma * (LevelPlusConfig.Instance.SummonDamagePerPoint * 100))) + "% minion damage\n"
-                        + "  +" + (modPlayer.charisma / LevelPlusConfig.Instance.SummonCritPerPoint) + "% minion crit chance";
+                    text = text = Language.GetTextValue("Mods.LevelPlus.UI.StatButton.Charisma",
+                        (int) (modPlayer.charisma * (LevelPlusConfig.Instance.SummonDamagePerPoint * 100)),
+                        modPlayer.charisma / LevelPlusConfig.Instance.SummonCritPerPoint);
                     rarity = 6; //light purple
                     break;
                 case Stat.DEXTERITY:
                     points.SetText("" + modPlayer.dexterity);
-                    text = "Dexterity:\n\n"
-                        + "  +" + ((int) (modPlayer.dexterity * (LevelPlusConfig.Instance.RangedDamagePerPoint * 100))) + "% ranged damage\n"
-                        + "  +" + (modPlayer.dexterity / LevelPlusConfig.Instance.RangedCritPerPoint) + "% ranged crit chance";
+                    text = Language.GetTextValue("Mods.LevelPlus.UI.StatButton.Dexterity",
+                        (int) (modPlayer.dexterity * (LevelPlusConfig.Instance.RangedDamagePerPoint * 100)),
+                        modPlayer.dexterity / LevelPlusConfig.Instance.RangedCritPerPoint);
                     rarity = 8; //yellow
                     break;
                 case Stat.MOBILITY:
                     points.SetText("" + modPlayer.mobility);
-                    text = "Mobility:\n\n"
-                        + "  +" + ((int) (modPlayer.mobility * (LevelPlusConfig.Instance.AccelPerPoint * 100))) + "% acceleration\n"
-                        + "  +" + ((int) (modPlayer.mobility * (LevelPlusConfig.Instance.WingPerPoint * 100))) + "% wing time\n"
-                        + "  +" + ((int) (modPlayer.mobility * (LevelPlusConfig.Instance.RunSpeedPerPoint * 100))) + "% max run speed";
+                    text = Language.GetTextValue("Mods.LevelPlus.UI.StatButton.Mobility",
+                        (int) (modPlayer.mobility * (LevelPlusConfig.Instance.AccelPerPoint * 100)),
+                        (int) (modPlayer.mobility * (LevelPlusConfig.Instance.WingPerPoint * 100)),
+                        (int) (modPlayer.mobility * (LevelPlusConfig.Instance.RunSpeedPerPoint * 100)));
                     rarity = 0; //white
                     break;
                 case Stat.EXCAVATION:
                     points.SetText("" + modPlayer.excavation);
-                    text = "Excavation:\n\n"
-                        + "  +" + ((int) (modPlayer.excavation * (LevelPlusConfig.Instance.PickSpeedPerPoint * 100))) + "% pick speed\n"
-                        + "  +" + ((int) (modPlayer.excavation * (LevelPlusConfig.Instance.BuildSpeedPerPoint * 100))) + "% place speed\n"
-                        + "  +" + (modPlayer.excavation / LevelPlusConfig.Instance.RangePerPoint) + " block range";
+                    text = Language.GetTextValue("Mods.LevelPlus.UI.StatButton.Excavation",
+                        (int) (modPlayer.excavation * (LevelPlusConfig.Instance.PickSpeedPerPoint * 100)),
+                        (int) (modPlayer.excavation * (LevelPlusConfig.Instance.BuildSpeedPerPoint * 100)),
+                        modPlayer.excavation / LevelPlusConfig.Instance.RangePerPoint);
                     rarity = 0; //white
                     break;
                 case Stat.ANIMALIA:
                     points.SetText("" + modPlayer.animalia);
-                    text = "Animalia:\n\n"
-                        + "  +" + ((int) (modPlayer.animalia * (LevelPlusConfig.Instance.FishSkillPerPoint * 100))) + "% better fishing\n"
-                        + "  +" + (modPlayer.animalia / LevelPlusConfig.Instance.MinionPerPoint) + " minion slots\n";
+                    text = Language.GetTextValue("Mods.LevelPlus.UI.StatButton.Animalia",
+                        (int) (modPlayer.animalia * (LevelPlusConfig.Instance.FishSkillPerPoint * 100)),
+                        modPlayer.animalia / LevelPlusConfig.Instance.MinionPerPoint);
                     //+ "  +" + ((int)(modPlayer.animalia * (levelplusConfig.Instance.MinionKnockBack * 100))) + "% minion knockback";
                     rarity = 0; //white
                     break;
                 case Stat.LUCK:
                     points.SetText("" + modPlayer.luck);
-                    text = "Luck:\n\n"
-                        + "  +" + ((int) (modPlayer.luck * (LevelPlusConfig.Instance.XPPerPoint * 100))) + "% xp gain\n"
-                        + "  +" + ((int) ((modPlayer.luck * 100) / LevelPlusConfig.Instance.AmmoPerPoint)) + "% chance not to consume ammo";
+                    text = Language.GetTextValue("Mods.LevelPlus.UI.StatButton.Luck",
+                        (int) (modPlayer.luck * (LevelPlusConfig.Instance.XPPerPoint * 100)),
+                        (int) ((modPlayer.luck * 100) / LevelPlusConfig.Instance.AmmoPerPoint));
                     rarity = 0; //white
                     break;
                 case Stat.MYSTICISM:
                     points.SetText("" + modPlayer.mysticism);
-                    text = "Mysticism:\n\n"
-                        + "  +" + (modPlayer.mysticism * LevelPlusConfig.Instance.ManaPerPoint) + " max mana (+" + (modPlayer.level * LevelPlusConfig.Instance.ManaPerLevel) + " from level)\n"
-                        + "  +" + (modPlayer.mysticism / LevelPlusConfig.Instance.ManaRegPerPoint) + " mana regen\n"
-                        + "  -" + System.Math.Clamp((int) (modPlayer.mysticism * (LevelPlusConfig.Instance.ManaCostPerPoint * 100)), 0f, 99.0f) + "% mana cost (can't be reduced below 1%)";
+                    text = Language.GetTextValue("Mods.LevelPlus.UI.StatButton.Mysticism",
+                        modPlayer.mysticism * LevelPlusConfig.Instance.ManaPerPoint,
+                        modPlayer.level * LevelPlusConfig.Instance.ManaPerLevel,
+                        modPlayer.mysticism / LevelPlusConfig.Instance.ManaRegPerPoint,
+                        System.Math.Clamp((int) (modPlayer.mysticism * (LevelPlusConfig.Instance.ManaCostPerPoint * 100)), 0f, 99.0f));
                     rarity = 0; //white
                     break;
                 default:

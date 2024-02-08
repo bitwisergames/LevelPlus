@@ -284,3 +284,95 @@ Popups: {
 	LevelUp: Level Up!
 	BestiaryUnlock: Bestiary Unlocked!
 }
+
+UI: {
+	XPBar: {
+		Local:
+			'''
+			Level: {0}
+			{1} unspent points
+			'''
+		Multiplayer:
+			'''
+			{0} players online
+			Average Level: {1}
+			'''
+	}
+
+	StatButton: {
+		Constitution:
+			'''
+			Constitution:
+
+			  +{0} life (+{1} from level)
+			  +{2} defense
+			  +{3} life regen
+			'''
+		Strength:
+			'''
+			Strength
+
+			  +{0}% melee damage
+			  +{1}% melee crit chance 
+			'''
+		Intelligence:
+			'''
+			Intelligence:
+
+			  +{0}% magic damage
+			  +{1}% magic crit chance
+			'''
+		Charisma:
+			'''
+			Charisma:
+
+			  +{0}% minion damage
+			  +{1}% minion crit chance
+			'''
+		Dexterity:
+			'''
+			Dexterity:
+
+			  +{0}% ranged damage
+			  +{1}% ranged crit chance
+			'''
+		Mobility:
+			'''
+			Mobility:
+
+			  +{0}% acceleration
+			  +{1}% wing time
+			  +{2}% max run speed
+			'''
+		Excavation:
+			'''
+			Excavation:
+
+			  +{0}% pick speed
+			  +{1}% place speed
+			  +{2} block range
+			'''
+		Animalia:
+			'''
+			Animalia:
+
+			  +{0}% better fishing
+			  +{1} minion slots
+			'''
+		Luck:
+			'''
+			Luck:
+
+			  +{0}% xp gain
+			  +{1}% chance not to consume ammo
+			'''
+		Mysticism:
+			'''
+			Mysticism:
+
+			  +{0} max mana (+{1} from level)
+			  +{2} mana regen
+			  -{3}% mana cost (can't be reduced below 1%)
+			'''
+	}
+}
