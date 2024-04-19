@@ -1,0 +1,373 @@
+Configs: {
+	LevelPlusConfig: {
+		DisplayName: Configurações de Stat
+
+		HealthPerLevel: {
+			Tooltip: Quantidade de HP máximo que é ganho por level-up
+			Label: Vida máxima por level
+		}
+
+		ManaCostPerPoint: {
+			Tooltip: Redução de custo de mana por ponto
+			Label: Redução de custo de mana por ponto
+		}
+
+		ManaRegPerPoint: {
+			Tooltip: Quantos pontos são necessários para aumentar a regeneração de mana por um
+			Label: Pontos por regeneração de mana
+		}
+
+		ManaPerPoint: {
+			Tooltip: Quanto de mana máxima é ganho por ponto
+			Label: Mana máxima por ponto
+		}
+
+		AmmoPerPoint: {
+			Tooltip: Porcentagem de chance de não consumir munição por ponto
+			Label: Redução de consumo de munição por ponto
+		}
+
+		XPPerPoint: {
+			Tooltip: Quanto que o ganho de xp é incrementado por ponto (em porcentagem)
+			Label: Aumento de ganho de xp por ponto
+		}
+
+		WingPerPoint: {
+			Tooltip: Quanto tempo de voo é ganho por ponto (em porcentagem)
+			Label: Tempo de voo por ponto
+		}
+
+		AccelPerPoint: {
+			Tooltip: Quanta aceleração é ganha por ponto (em porcentagem)
+			Label: aceleração por ponto
+		}
+
+		RunSpeedPerPoint: {
+			Tooltip: Quanta velocidade de corrida é ganha por ponto (em porcentagem)
+			Label: Velocidade de corrida por ponto
+		}
+
+		RangePerPoint: {
+			Tooltip: Quantos pontos são necessários para aumentar o alcance de posicionamento de blocos por um
+			Label: Pontos por alcance de posicionamento de blocos
+		}
+
+		BuildSpeedPerPoint: {
+			Tooltip: Quanta velocidade de construção é ganha por ponto (em porcentagem)
+			Label: Velocidade de construção por ponto
+		}
+
+		PickSpeedPerPoint: {
+			Tooltip: Quanta velocidade de mineração é ganha por ponto (em porcentagem)
+			Label: Velocidade de mineração por ponto
+		}
+
+		MinionPerPoint: {
+			Tooltip: Quantos pontos são necessários para aumentar o máximo de minions por um
+			Label: Pontos por máximo de minions
+		}
+
+		FishSkillPerPoint: {
+			Tooltip: Quanta habilidade de pesca é ganha por ponto (em porcentagem)
+			Label: Habilidade de pesca por ponto
+		}
+
+		SummonCritPerPoint: {
+			Tooltip: Quantos pontos são necessários para aumentar o crítico de invocação em um
+			Label: Pontos por crítico de invocação
+		}
+
+		SummonDamagePerPoint: {
+			Tooltip: Quanto dano de invocação é ganho por ponto (em porcentagem)
+			Label: Dano de invocação por ponto
+		}
+
+		RangedCritPerPoint: {
+			Tooltip: Quantos pontos são necessários para aumentar o crítico à distância em um
+			Label: Pontos por crítico à distância
+		}
+
+		RangedDamagePerPoint: {
+			Tooltip: Quanto dano à distância é ganho por ponto (em porcentagem)
+			Label: Dano à distância por ponto
+		}
+
+		MeleeCritPerPoint: {
+			Tooltip: Quantos pontos são necessários para aumentar o crítico corpo a corpo em um
+			Label: Pontos por crítico corpo a corpo
+		}
+
+		MeleeDamagePerPoint: {
+			Tooltip: Quanto dano corpo a corpo é ganho por ponto (em porcentagem)
+			Label: Dano corpo a corpo por ponto
+		}
+
+		MagicCritPerPoint: {
+			Tooltip: Quantos pontos são necessários para aumentar o crítico mágico em um
+			Label: Pontos por crítico mágico
+		}
+
+		MagicDamagePerPoint: {
+			Tooltip: Quanto dano mágico é ganho por ponto (em porcentagem)
+			Label: Dano mágico por ponto
+		}
+
+		DefensePerPoint: {
+			Tooltip: Quantos pontos são necessários para aumentar a defesa em um
+			Label: Pontos por defesa
+		}
+
+		HRegenPerPoint: {
+			Tooltip: Quantos pontos são necessários para aumentar a regeneração de vida em um
+			Label: Pontos por regeneração de vida
+		}
+
+		HealthPerPoint: {
+			Tooltip: Quanto HP máximo é ganho por ponto
+			Label: Vida máxima por ponto
+		}
+
+		ManaPerLevel: {
+			Tooltip: Quanta mana máxima é ganha por level-up
+			Label: Mana máxima por level
+		}
+
+		PointsBase: {
+			Label: Pontos iniciais
+			Tooltip: Com quantos pontos o jogador começa
+		}
+
+		PointsPerLevel: {
+			Label: Pontos por level
+			Tooltip: Quantos pontos o player ganha por level-up
+		}
+
+		XPBase: {
+			Label: Label: XP de level básico
+			Tooltip: XP base (plano) necessário para subir de level
+		}
+
+		XPIncrease: {
+			Label: Aumento de experiência por level
+			Tooltip: Aumento de exigência de XP por level
+		}
+
+		XPRate: {
+			Label: Multiplicador de XP por level
+			Tooltip: Multiplicador para exigência de XP por level
+		}
+
+		MobXP: {
+			Label: Xp de mob
+			Tooltip: Multiplicador de xp de Mob
+		}
+
+		BossXP: {
+			Label: Xp de chefe
+			Tooltip: Multiplicador de xp de chefe
+		}
+
+		ScalingEnabled: {
+			Label: Dimensionamento de mob ativado
+			Tooltip: Se os mobs devem ou não escalar com o jogador
+		}
+
+		ScalingHealth: {
+			Label: Escalonamento da vida do mob
+			Tooltip: Aumenta a vida do mob por level do player (multiplicativo)
+		}
+
+		ScalingDamage: {
+			Label: Escalonamento de dano do mob
+			Tooltip: Aumenta o dano do mob por level do player (multiplicativo)
+		}
+
+		CommandsEnabled: {
+			Label: Comandos ativos
+			Tooltip: ""
+		}
+
+		ScalingDefense: {
+			Label: Escalonamento de defesa do mob
+			Tooltip:
+				'''
+				            Incremento na defesa do mob por level do jogador(aditivo)
+				[c/ff0000:AVISO: Não recomendado, a menos que você se sinta realmente superpoderoso.]
+				'''
+		}
+
+		Headers: {
+			commands: Comandos
+			mobScaling: Dimensionamento de Mob
+			levelBonus: Bônus de Level-up
+			constitution: Constituição
+			intelligence: Inteligência
+			strength: Força
+			dexterity: Destreza
+			charisma: Carisma
+			animalia: Animalia
+			excavation: Escavação
+			xpScaling: Dimensionamento de Xp
+			points: Pontos
+			mysticism: Misticismo
+			mobility: Mobilidade
+			luck: Sorte
+		}
+	}
+
+	ClientConfig: {
+		xpBarTop: {
+			Tooltip: Distância do topo da tela. (em pixels)
+			Label: Topo da Barra de Xp
+		}
+
+		xpBarLeft: {
+			Tooltip: Distância da esquerda da tela. (em pixels)
+			Label: Esquerda da Barra de Xp
+		}
+
+		xpBarLocked: {
+			Tooltip: Quando desativado, você pode arrastar a barra de xp pela tela.
+			Label: Barra de Xp Bloqueada
+		}
+
+		DisplayName: Configurações do Cliente
+
+		enablePopups: {
+			Tooltip: Quando ativo, popups de texto irão aparecer quando você ganhar xp ou subir de level.
+			Label: Ativar popups de texto
+		}
+
+		Headers: {
+			textPopups: Popups de Texto
+			xpBar: Barra de XP
+		}
+	}
+}
+
+Items: {
+	Restart: {
+		Tooltip:
+			'''
+			[c/ff0000:QUANDO USADO, TODO O PROGRESSO DO Level+ SERÁ PERDIDO PARA ESSE PERSONAGEM.]
+			"Volte de onde você veio!"
+			'''
+		DisplayName: Insígnia do Renascimento
+	}
+
+	Respec: {
+		Tooltip: "[c/55ff55:Permite a realocação dos pontos de skill.]"
+		DisplayName: Insígnia da Reforma
+	}
+}
+
+Keybinds: {
+	Mods: {
+		LevelPlus: {
+			Keybind: {
+				TwentyFive.DisplayName: Gastou 25 pontos
+				Ten.DisplayName: Gastou 10 pontos
+				Five.DisplayName: Gastou 5 pontos
+				UI.DisplayName: Abrir UI de stat
+			}
+		}
+	}
+}
+
+Popups: {
+	XpGain: + {0} XP
+	LevelUp: Level Up!
+	BestiaryUnlock: Bestiário Desbloqueado!
+}
+
+UI: {
+	XPBar: {
+		Local:
+			'''
+			Level: {0}
+			{1} pontos restantes
+			'''
+		Multiplayer:
+			'''
+			{0} jogadores online
+			Level Médio: {1}
+			'''
+	}
+
+	StatButton: {
+		Constitution:
+			'''
+			Constituição:
+
+			  +{0} vida (+{1} do level)
+			  +{2} defesa
+			  +{3} regeneração de vida
+			'''
+		Strength:
+			'''
+			Força
+
+			  +{0}% dano corpo a corpo
+			  +{1}% chance de crítico corpo a corpo
+			'''
+		Intelligence:
+			'''
+			Inteligência:
+
+			  +{0}% dano mágico
+			  +{1}% chance de crítico mágico
+			'''
+		Charisma:
+			'''
+			Carisma:
+
+			  +{0}% dano de minion
+			  +{1}% chance crítica de minion
+			'''
+		Dexterity:
+			'''
+			Destreza:
+
+			  +{0}% dano à distância
+			  +{1}% chance de crítico à distância
+			'''
+		Mobility:
+			'''
+			Mobilidade:
+
+			  +{0}% aceleração
+			  +{1}% tempo de voo
+			  +{2}% velocidade de corrída máxima
+			'''
+		Excavation:
+			'''
+			Escavação:
+
+			  +{0}% velocidade da picareta
+			  +{1}% velocidade de posicionamento de blocos
+			  +{2} alcance de posicionamento de blocos
+			'''
+		Animalia:
+			'''
+			Animalia:
+
+			  +{0}% melhor em pescaria
+			  +{1} espaços de minion
+			'''
+		Luck:
+			'''
+			Sorte:
+
+			  +{0}% ganho de xp
+			  +{1}% chance de não consumir munição
+			'''
+		Mysticism:
+			'''
+			Misticismo:
+
+			  +{0} máximo de mana (+{1} do level)
+			  +{2} regeneração de mana
+			  -{3}% custo de mana (não pode ser reduzido abaixo de 1%)
+			'''
+	}
+}
